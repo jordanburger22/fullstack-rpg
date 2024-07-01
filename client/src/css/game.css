@@ -1,0 +1,32 @@
+.game {
+    position: relative;
+    width: 100vw;
+    height: 95vh;
+    overflow: hidden; /* Prevent scrolling beyond viewport */
+}
+
+.player {
+    position: absolute;
+    border: solid black 1px;
+    background-color: red;
+    z-index: 3;
+}
+
+.map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500%; /* Expand map width 5 times */
+    height: 500%; /* Expand map height 5 times */
+    background-color: blue;
+    transform-origin: top left;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden; /* Hide overflow beyond viewport */
+}
+
+.tile {
+    width: 20px;
+    height: 20px;
+    border: dotted black 1px;
+}
